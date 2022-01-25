@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lycée Charlemagne</title>
+    <style>
+        * {
+            font-family: verdana, arial, sans-serif;
+            font-size: 12px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        div {
+            display: block;
+        }
+
+        #container {
+            background: url(img/fond_site.gif);
+            background-repeat: repeat-y;
+            background-position: 2px 0px;
+            position: relative;
+            width: 1000px;
+            margin: 0px auto 0px auto;
+            text-align: left;
+        }
+
+        #bandeau {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            width: 1000px;
+            height: 120px;
+            background: url(imG/fond_bandeau.jpg);
+        }
+
+        #bandeau #navigation {
+            position: relative;
+            left: 230px;
+            top: 103px;
+            width: 770px;
+        }
+
+        #bandeau #navigation a {
+            color: white;
+            font-family: verdana, arial;
+            text-decoration: none;
+            letter-spacing: 0.19em;
+            background: url(img/fond_navigation_off.gif);
+            background-repeat: no-repeat;
+            background-position: 5px 5px;
+            padding: 2px 5px 3px 17px;
+            margin: 0px 15px 0px 10px;
+        }
+
+        #bandeau img {
+            position: absolute;
+            left: 60px;
+            top: 84px;
+            border-style: none;
+        }
+        #menu {
+    float: left;
+    width: 198px;
+    background-color: #FFAD1D;
+    margin: 0px 10px 80px 9px;
+    padding: 0px 0px 10px 0px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.4em;
+}
+#center {
+    display: block;
+    text-align: -webkit-center;
+}
+#menu ul a {
+    background: url(img/fond_navigation_off.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding: 0px 0px 0px 12px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul {
+    list-style-type: disc;
+}
+#menu li {
+    margin: 4px 0px 0px 0px;
+    padding: 0px 0px 0px 12px;
+    list-style: none;
+    text-align: left;
+}
+#menu ul {
+    margin: 6px 6px 0px 6px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+#menu ul li a {
+    background: url(images/fond_menu_off.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+#corps {
+    float: left;
+    margin: 0px 0px 0px 20px;
+    width: 740px;
+    color: #000000;
+    text-align: justify;
+}
+#corps h1 {
+    color: #0F5094;
+    font-family: trebuchet ms,verdana,arial;
+    font-size: 23px;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px 0px 3px 0px;
+    margin: 30px 0px 20px 0px;
+    border-bottom: 1px solid #B5C8DF;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+#corps a {
+    color: #006CC6;
+    font-weight: bold;
+    text-decoration: none;
+}
+div {
+                    display: block;
+  }
+b {
+    font-weight: bold;
+}
+#coordonnees {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px 0px 0px 10px;
+    width: 200px;
+    height: 80px;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.3em;
+}
+#footer {
+    background: url(img/fond_footer.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    position: relative;
+    clear: both;
+    padding: 5px 0px 5px 0px;
+}
+#cadenas {
+    position: absolute;
+    top: 155px;
+    left: 960px;
+    border: none;
+}
+#liste-alaune div {
+    background-color: #F0F5F9;
+    border: 1px solid #B5C8DF;
+    margin: 10px 0px 0px 0px;
+}
+#liste-alaune div h2 {
+    margin: 10px 10px 10px 10px;
+}
+#corps h2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 25px 0px 10px 0px;
+    text-transform: uppercase;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#liste-alaune div img {
+    margin: 3px 10px 5px 10px;
+}
+#corps p {
+    line-height: 1.4em;
+    margin: 11px 0px 11px 0px;
+}
+#liste-alaune div p {
+    margin: 11px 10px 11px 10px;
+}
+#liste-actus div img, #liste-alaune div img {
+  float: left;
+  margin: 2px 10px 5px 0px;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="bandeau">
+            <a href="/index.php"><img src="/img/logo_charlemagne.gif" width="125" height="35"
+                    alt="Lycée Charlemagne"></a>
+            <div id="navigation">
+                <a href="/historique/index.php">Historique</a>
+                <a href="/cpge/actualites.php">Classes préparatoires</a>
+                <a href="/lycee/actualites.php">Lycée</a>
+                <a href="/college/actualites.php">Collège</a>
+                <a href="/galeries/index.php">Galeries</a>
+                
+            </div>
+        </div>
+
+
+        <section class="left">
+            <div id="menu">
+                <img src="/img/titre_lycee.jpg" width="198" height="115" alt="Le lycée">
+                <center><a href="https://ent.iledefrance.fr/auth/login?callback=https%3A%2F%2Fent.iledefrance.fr%2Ftimeline%2Ftimeline" target="_blank"><img src="img/entlogo.jpg"></a> <a href="http://webparent.paiementdp.com/aliAuthentification.php?site=aes00358" target="_blank"><img src="img/paiementcantine.jpg"></a></center>
+                <ul>
+                  <a href="/lycee/actualites.php">Actualités</a>
+                        <li><a href="/lycee/actualites-rss.php">Flux RSS</a></li>
+                      </ul>
+                 <ul>
+                  <a href="/lycee/accueil.php">Contact et Accueil</a>
+                </ul>
+            
+                 <ul>
+                <b>Le second cycle</b>
+                    <li><a href="/lycee/second_cycle.php">Filières, horaires	</a></li>
+                <li><a href="/lycee/EIE.php">E.I.E.</a></li>
+                    <li><a href="/lycee/inscriptions.php">Affectations, inscriptions</a></li>
+                    <li><a href="/lycee/baccalaureat.php">Baccalauréat</a></li>
+                    <li><a href="/lycee/statistiques.php">Données statistiques</a></li>
+               </ul>
+            
+                    <ul><b>Vie scolaire</b>
+                  
+                  <li><a href="/lycee/reglement_interieur.php">Règlement intérieur</a></li>
+                  <li><a href="/lycee/retards_absences.php">Retards / Absences</a></li>
+                  <li><a href="/lycee/enfant_difficultes.php">Elèves en difficulté</a></li>      
+                </ul>
+            
+                <ul>
+                    <b>Projet pédagogique et culturel</b>
+                    <li><a href="/projetetab/projetetablissement.php">Projet d'établissement</a>
+                    </li><li><a href="/lycee/actions/act.php">Actions pédagogiques, culturelles et civiques</a></li>
+                            <li><a href="/lycee/conferences/oldconferences.php">Conférences</a></li>
+                            <li><a href="/lycee/partenariat.php">Partenariats</a></li>
+                            <li><a href="http://isn-charlemagne.fr" target="_blank">Informatique</a></li>
+                    <li><a href="/lycee/sortiesscolaires.php">Sorties scolaires</a></li>
+                    <li><a href="/lycee/clubtheatre.php">Atelier Théâtre</a></li>
+                </ul>
+                <ul>
+                <b>Relations internationales</b>
+                   <li><a href="/lycee/sorties/athenes/international.php">Partenariat avec Athènes</a></li>
+                   <li><a href="/lycee/sorties/Mexico/mexique.php">Partenariat avec Mexico</a></li>
+                   <li><a href="/lycee/voyages.php">Voyages et échanges</a></li>
+                </ul>
+                
+                <ul><b> <a href="/lycee/assocsportive.php">Association sportive</a> </b></ul><b> 
+                <ul><a href="/lycee/pedagogie.php">Espace pédagogique</a></ul>
+                    <ul><a href="/lycee/cdi2.php">C.D.I.</a></ul>
+                <ul> <a href="/lycee/cio.php">C.I.O</a></ul>
+                    <ul><a href="/lycee/stagesentreprises.php">Stages en entreprises</a></ul>
+                <ul><b> <a href="/lycee/cvl3.php">C.V.L</a></b></ul><b>  
+                <ul><b><a href="/lycee/mdl.php">Maison des lycéens</a></b></ul><b>
+                
+                <ul>
+                      <a href="/lycee/intendance.php">Intendance</a>
+                      <ul>&nbsp;&nbsp;&nbsp;Cantine
+                           <li><a href="/lycee/reglement_demipension.php">Règlement</a></li>
+                           <li><a href="/lycee/tarification_demi pension.php">Tarification</a></li>
+                           <li><a href="http://webparent.paiementdp.com/aliAuthentification.php?site=aes00358" target="_blank">Paiement en ligne</a></li>
+                       </ul>
+                      <ul>&nbsp;&nbsp;&nbsp;Bourses</ul>
+                      <ul>&nbsp;&nbsp;&nbsp;<a href="/lycee/liens_intendance.php">Liens utiles</a></ul>
+                     </ul>
+                 <ul> <a href="/lycee/agents/agents.php">Personnel non enseignant</a></ul>	
+                <ul>
+                <a href="/lycee/medicosocial.php">Service médical</a>
+                </ul>
+                
+                <ul>
+                <a href="http://fcpecharlemag.free.fr" target="_blank">Page des parents d'élèves</a>
+                </ul>
+                <ul>
+                 <a href="http://www.charlemagnealumni.fr/" target="_blank">Site des anciens élèves</a>
+                </ul>
+                <ul>
+                  <a href="/lycee/telechargdocuments.php">Documents à télécharger</a>
+                </ul>
+               
+              </b></b></b></div>
+                
+
+        </section>
+        <section class="right">
+            <b><b><b>
+                
+                <div id="corps">
+              <a href="actualites_internes.php"><img id="cadenas" src="img/cadenas_off.gif"></a>
+                <h1>À LA UNE</h1>
+              <div id="liste-alaune">
+              <div>
+              <h2>PARCOURSUP</h2>
+              <img src="img/actu-1866.jpg" width="120" height="39" alt="PARCOURSUP">
+              <p>La procédure d'orientation 2022 vers l'enseignement supérieur débute le 21 Décembre.</p>
+              <p>Après une phase de découverte des formations, les élèves devront s'inscrire sur la plateforme PARCOURSUP en ligne et entrer leurs voeux entre le <strong><em>20 Janvier 2022</em></strong> et le <strong><em>29 Mars 2002 </em></strong>inclus.</p>
+              <p>Pour plus de renseignements se connecter au&nbsp;<a href="https://www.parcoursup.fr" target="_blank">site PARCOURSUP </a></p>
+              </div>
+              
+              <div>
+              <h2>26 JANVIER 2022 - JOURNEE PORTES OUVERTES CGPE</h2>
+              <img src="img/2.jpg" width="115" height="92" alt="26 JANVIER 2022 - JOURNEE PORTES OUVERTES CGPE">
+              <p>La Journée Portes Ouvertes des CPGE du lycée Charlemagne se tiendra le <em><strong>Mercredi 26 Janvier 2022</strong></em> à partir de <em><strong>13h30. </strong></em></p>
+              <p>En raison des conditions sanitaires actuelles cette journée se déroulera par visioconférences durant tout l'après-midi.</p>
+              <p>&nbsp;</p>
+              <p>Pour les informations de connexion ouvrir la page dédiée <a href="jpo2022.php">Journée Portes Ouvertes 2022 </a></p>
+              </div>
+              
+              <div>
+              <h2>PROTOCOLE SANITAIRE EN VIGUEUR</h2>
+              <img src="img/3.jpg" width="120" height="49" alt="PROTOCOLE SANITAIRE EN VIGUEUR">
+              <p>&nbsp;</p>
+              <p>Vous trouverez <a href="documents/Protocole sanitaire de rentrée 2021.pdf" target="_blank"> ici </a>le protocole sanitaire en vigueur depuis la rentrée 2021</p>
+              </div>
+              
+              <div>
+              <h2>RESTAURATION DE LA BIBLIOTHEQUE DES JESUITES</h2>
+              <img src="img/4.jpg" width="109" height="120" alt="RESTAURATION DE LA BIBLIOTHEQUE DES JESUITES">
+              <p>Suite au permis de construire délivré par la région Ile-de-France le 20 octobre 2021, les travaux de restauration de l'ancienne bibliothèque des Jésuites au 3ème étage de l'aile Nord du lycée Charlemagne vont commencer.</p>
+              <p><a href="img/5.jpg" target="_blank"><img src="img/5.jpg" alt=""></a></p>
+              <p>&nbsp;</p>
+              <p><br><br><a href="visitevirtuellebibliojesuites.php">Visite virtuelle de la bibliothèque</a></p>
+              <p>&nbsp;</p>
+              <p><br><br>L' inauguration de la bibliothèque serait prévue au cours du premier trimestre de l'année 2023-2024.</p>
+              </div>
+              
+              <div>
+              <h2>PRIX LYCEEN DU LIVRE DE PHILOSOPHIE</h2>
+              <img src="img/6.jpg" width="119" height="116" alt="PRIX LYCEEN DU LIVRE DE PHILOSOPHIE">
+              <p><br>Pour la troisième année consécutive, des élèves de Terminale participeront au jury du Prix lycéen du livre de philosophie.</p>
+              <p>Ils et elles sont invité(e)s à se rapprocher de Madame Carlin, professeure de philosophie ou de Madame Dubois, professeure documentaliste.</p>
+              <p><a href="actions/PrixPhilo2021-2022.pdf" target="_blank">Plus d'informations ici</a><br><br> Des réunions en petits groupes seront proposées aux élèves désirant participer à cette action.</p>
+              </div>
+              
+              <div>
+              <h2>MESURE ECOLOGIQUE</h2>
+              <img src="img/7.jpg" width="75" height="95" alt="MESURE ECOLOGIQUE">
+              <p>&nbsp;</p>
+              <p>Chaque lundi et chaque jeudi une poubelle de récupération du papier usagé, à couvercle jaune, sera à la disposition de tous dans la cour du lycée. Cette mesure a été adoptée par le CVL du lycée.</p>
+              <p>&nbsp;</p>
+              </div>
+              
+              <div>
+              <h2>STAGES INTENSIFS DE LANGUES</h2>
+              <img src="img/8.jpg" width="120" height="100" alt="STAGES INTENSIFS DE LANGUES">
+              <p>Des stages intensifs de langues gratuits pendant les vacances sont proposés aux lycéens dans 3 langues : anglais, allemand, espagnol.</p>
+              <p>D'une durée de 15 heures, ils s'étalent sur 5 jours du lundi au vendredi le matin ou l'après-midi pour l'anglais et l'espagnol, et le matin uniquement pour l'allemand.</p>
+              </div>
+              
+              <div>
+              <h2>AIDE AUX ELEVES EN DIFFICULTE</h2>
+              <img src="img/9.jpg" width="120" height="90" alt="AIDE AUX ELEVES EN DIFFICULTE">
+              <p>« L<strong>es élèves du lycée Charlemagne bénéficient d’aides reposant sur une offre diversifiée </strong>et recherchant une individualisation des formes de soutien&nbsp;: <br><br></p>
+              <li>1/- &nbsp;Les élèves néo francophones ou ayant appris le français comme langue seconde peuvent bénéficier d’un&nbsp;<strong>soutien en Français Langue Etrangère</strong>. Le groupe est désigné par les enseignants.</li>
+              <li>2/- &nbsp;Les enseignants mettent en place&nbsp;<strong>des modules de remise à niveau</strong> pour les élèves qui rencontrent des difficultés particulières dans l’adaptation aux apprentissages en classe de seconde. Ces modules sont animés par un ou deux enseignants, sur des créneaux de deux heures. Les élèves sont désignés par les professeurs principaux des classes de seconde.</li>
+              <li>3/- &nbsp;Les élèves, soutenus par le Conseil de la Vie Lycéenne, organisent à partir du deuxième trimestre&nbsp;<strong>un système de tutorat élève/élève</strong>. Ce tutorat peut concerner une discipline ou plusieurs mais aussi des questions de méthodologie.</li>
+              <li>4/- &nbsp;Certains élèves de seconde et de première peuvent avoir accès à&nbsp;<strong>un logiciel d’entrainement à l’orthographe</strong> : le projet «&nbsp;Voltaire&nbsp;». les élèves doivent demander au professeur principal un mot de passe pour accéder à l’application.&nbsp;»</li>
+              </div>
+              
+              <div>
+              <h2>PROJET VOLTAIRE</h2>
+              <img src="img/10.jpgS" width="116" height="87" alt="PROJET VOLTAIRE">
+              <p><span>Par le biais du </span><a href="https://www.projet-voltaire.fr/" target="_blank"> Projet Voltaire</a><span>, numéro 1 de la remise à niveau en orthographe,  les collège et lycée Charlemagne s'engagent dans cette voie de la remédiation. </span><br><br>C<span>et outil pédagogique permet à tout élève de revoir ou approfondir ses connaissances en orthographe,   grammaire, conjugaison et ainsi d'améliorer sa maîtrise de l'écrit avant les épreuves du brevet, du   baccalauréat ou des concours aux grandes écoles.</span><br><strong></strong><em></em></p>
+              <p><a href="mailto:afpvcharlemagne@hotmail.com">Pour faire une demande d'inscription</a></p>
+              </div>
+              
+              </div>
+               
+                
+                <div id="liste-actus">
+                  </div>
+              
+                </div>
+                
+                
+                
+              </b></b></b>
+
+        </section>
+        <footer>
+            <div id="coordonnees">
+                14 rue Charlemagne<br>
+                75004 Paris<br>
+                Tél&nbsp; 01 53 01 98 30<br>
+                Fax&nbsp; 01 42 72 78 18<br>
+                UAI (RNE) 0750652B<br>
+                <a href="mailto:ce.0750652b@ac-paris.fr">Contact</a>
+              </div>
+            
+              <div id="footer">
+              </div>        </footer>
+    </div>
+</body>
