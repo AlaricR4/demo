@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="java.util.Date"%>
 <html lang="en">
 
 <head>
@@ -6,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connection</title>
+    <%= new Date() %>
 </head>
 
 
@@ -13,7 +15,7 @@
 <h1> Web2 : APP</h1>
 
 <p>Pour s'identifier :</p>
-<a href="connection">Connetion</a>
+<a href="connection">Connection</a>
 
 
 </body>

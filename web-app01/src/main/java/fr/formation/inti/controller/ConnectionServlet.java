@@ -70,7 +70,7 @@ public class ConnectionServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setMaxInactiveInterval(30); //30 seconde
 		if(("root".equals(login)) && ("123456".equals(password))){
-			session.setAttribute("message", "you are connected!");
+			session.setAttribute("message", "you are connected! ");
 			session.setAttribute("dateConnection", new Date());
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/login");
 			dispatcher.forward(request, response);

@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 		String message = (String) session.getAttribute("message");
 		Date con =  (Date) session.getAttribute("dateConnection");
 		if(message == null) {
-			response.sendRedirect("index.html");
+			response.sendRedirect("index.jsp");
 		}else {
 			response.getWriter().append(message).append("<br>").append(con.toString())
 			.append("<br>").append(session.getId());
@@ -61,7 +61,7 @@ public class LoginServlet extends HttpServlet {
 		out.println("<p>you are connected</p>");
 		out.println("<p>"+date+"</p>");
 		
-		out.println("<form action=\"index.html\" method=\"post\">"		
+		out.println("<form action=\"index.jsp\" method=\"post\">"		
 				+ "<input type=\"submit\" value=\"Retour home\">"		
 				+ "</form>");
 
