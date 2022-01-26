@@ -68,7 +68,7 @@ public class ConnectionServlet extends HttpServlet {
 		String login = request.getParameter("Login");
 		String password = request.getParameter("PassWord");
 		HttpSession session = request.getSession();
-		
+		session.setMaxInactiveInterval(30);//30seconde
 		if(("root".equals(login)) && ("123456".equals(password))){
 			session.setAttribute("message", "you are connected!");
 			session.setAttribute("dateConnection", new Date());
