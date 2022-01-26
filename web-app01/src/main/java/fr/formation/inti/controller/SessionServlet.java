@@ -28,7 +28,7 @@ public class SessionServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		// example session
 		response.getWriter().append("You are disconnected");
 		HttpSession session = request.getSession();
 		session.invalidate();
