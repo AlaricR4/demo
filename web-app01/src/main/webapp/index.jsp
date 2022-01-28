@@ -17,7 +17,7 @@
 <p>Pour s'identifier :</p>
 <a href="connection">Connection</a>
 
-
+<h1>${emp }</h1>
 </body>
 
 

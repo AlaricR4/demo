@@ -6,6 +6,7 @@
 	return a+b;
 }
 %>
+<%! int count = 0; %>
     
 <!DOCTYPE html>
 <html>
@@ -35,5 +36,9 @@
 %>
 <h1> 1+2 = <%=sum(1,2) %></h1>
 <a href="<%= request.getRequestURI() %>">click</a>
+<%=++count %>
+
+
+		
 </body>
 </html>

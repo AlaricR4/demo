@@ -62,9 +62,9 @@ public void init(FilterConfig fConfig) throws ServletException {
 		String uri = req.getRequestURI();
 		this.context.log("Requested resource:"+uri);
 		
-		if(session == null && !(uri.endsWith("index.jsp") || uri.endsWith("connection"))){
+		if(session == null && !(uri.endsWith(".jsp") || uri.endsWith("register"))){
 			this.context.log("Unauthorized access request ");
-			res.sendRedirect("index.jsp");
+			res.sendRedirect("register.jsp");
 		}else {
 			chain.doFilter(request, response);
 		}
